@@ -3,7 +3,6 @@
 <header class="header header--loggedIn">
   <div class="container">
     <a href="{% url 'home' %}" class="header__logo">
-      <img src="images/logo.svg" />
       <h1>CodeComm</h1>
     </a>
     <form class="header__search" method="GET" action="{% url 'home' %}">
@@ -51,7 +50,7 @@
       {% else %}
       <!-- Not Logged In -->
       <a href="{% url 'login' %}">
-        <img src="images/avatar.svg" />
+        <img />
         <p>Login</p>
       </a>
       {% endif %}
